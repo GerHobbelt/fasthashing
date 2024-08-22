@@ -2,7 +2,9 @@
 #define ZTIMER
 
 #include <sys/stat.h>
+#ifndef _MSC_VER
 #include <sys/time.h>
+#endif
 #include <sys/types.h>
 
 class ZTimer

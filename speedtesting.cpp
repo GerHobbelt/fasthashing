@@ -11,8 +11,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#ifndef _MSC_VER
 #include <sys/time.h>
 #include <sys/resource.h>
+#endif
 #include <typeinfo>
 #include "ztimer.h"
 #include "hashfunctions.h"
